@@ -1,3 +1,37 @@
+1. What is a route, and how do you specify one in Flask?
+A route tells python the correct URL to trigger a function. In this case the url is "/" which is the root/home
+
+2. What is the only route we’ve specified in our application?
+We've only speficied the root URL or home url with "/"
+
+
+3. What is the method that gets called when we hit that route?
+The method called is hello, which returns the words "Hello World!"
+
+4. If I wanted to add a route at “/world” that printed “Hello, 
+World” on the screen, what would that code look like?
+
+@app.route("/world")
+hello()
+
+If I create a new application and import testingflask.py (a.k.a. I am not running it directly), will code under the ‘if __name__ == “__main__”: be executed? Why not?
+No. The code under the 'if __name__ == "__main__" is only executed within the script/file that it is located in.
+
+
+Almost every recursive method will have two features, a simple, or ‘base case’, and a case where the method calls itself with a ‘simpler’ input.
+For the ‘blastoff’ method in section 5.8:
+1. What is the ‘base case’ where we don’t call ‘blastoff’ again?
+	The base case when we no longer call 'blastoff' is when n = 0
+
+2. What is the ‘simpler’ form of our input (‘n’) that we pass into ‘blastoff’?
+	When n is greater than zero we will recurse countdown(n)
+
 *** Cut and paste the for loop here ***
 
+					{% for message in messages %}
+{{message}}
+					{% endfor %}
+
 *** What is the for loop doing? ***
+
+The for loop is returning all of the messages within messages.
