@@ -21,24 +21,20 @@ def draw(t, length, n):
 	bk(t, length*n)
 
 
-
-def eq_triangle(t, length):
-	fd(t, length)
-	lt(t, 120)
-	fd(t, length)
-	lt(t, 120)
-	fd(t, length)
-
 def koch_curve(t, length):
+
 	if length < 3:
 		fd(t, length)
-	angle = 60
-	fd(t, length/3)
-	lt(t, 60)
-	fd(t, length/3)
-	rt(t, 120)
-	fd(t, length/3)
-	lt(t, 60)
+		return
+	else:	
+		n = length/3.0
+		koch_curve(t, n)
+		lt(t, 60)
+		koch_curve(t, n)
+		rt(t, 120)
+		koch_curve(t, n)
+		lt(t, 60)
+		koch_curve(t, n)
 
 koch_curve(bob, 100)
 
